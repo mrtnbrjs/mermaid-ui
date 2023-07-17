@@ -1,3 +1,34 @@
-/node_modules
-/dist
-```
+# Ignorar directorios y archivos generados
+node_modules/
+dist/
+build/
+coverage/
+
+# Ignorar archivos y directorios de configuración local
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de compilación de TypeScript
+*.js
+*.js.map
+*.d.ts
+
+# Ignorar archivos de configuración de editor
+.vscode/
+.idea/
+
+# Ignorar archivos de registro y caché
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Ignorar archivos sensibles
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de respaldo
+*~

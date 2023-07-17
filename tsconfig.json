@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"lib": ["dom", "esnext"],
+		"module": "esnext",
+		"target": "es5",
+		"jsx": "react",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"declaration": true,
+		"outDir": "./dist"
+	},
+	"include": ["src"]
+}

@@ -11,14 +11,14 @@ const Template: Story<HeadingProps> = (args) => <Heading {...args} />;
 
 const TemplateShowcase: Story<HeadingProps> = (args) => (
 	<>
-		<Heading size="4xl" {...args} />
-		<Heading size="3xl" {...args} />
-		<Heading size="2xl" {...args} />
-		<Heading size="xl" {...args} />
-		<Heading size="lg" {...args} />
-		<Heading size="md" {...args} />
-		<Heading size="sm" {...args} />
-		<Heading size="xs" {...args} />
+		<Heading size="4xl" mb={5} {...args} />
+		<Heading size="3xl" mb={5} {...args} />
+		<Heading size="2xl" mb={5} {...args} />
+		<Heading size="xl" mb={5} {...args} />
+		<Heading size="lg" mb={5} {...args} />
+		<Heading size="md" mb={5} {...args} />
+		<Heading size="sm" mb={5} {...args} />
+		<Heading size="xs" mb={5} {...args} />
 	</>
 );
 

@@ -17,7 +17,7 @@ const colorVariants: Record<string, string> = {
 
 const allowedVariants = Object.keys(colorVariants);
 
-interface CustomButtonProps extends ButtonProps {}
+export interface CustomButtonProps extends ButtonProps {}
 
 const Button: React.FC<CustomButtonProps> = ({ colorScheme, ...rest }) => {
 	// Filtra el colorScheme para asegurarte de que solo se utilicen las variantes permitidas.

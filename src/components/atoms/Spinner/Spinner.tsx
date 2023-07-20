@@ -4,7 +4,7 @@ import {
 	SpinnerProps as ChakraSpinnerProps,
 } from "@chakra-ui/react";
 
-interface SpinnerProps extends ChakraSpinnerProps {}
+export interface SpinnerProps extends ChakraSpinnerProps {}
 
 const Spinner: React.FC<SpinnerProps> = ({ ...rest }) => {
 	return <ChakraSpinner {...rest} />;

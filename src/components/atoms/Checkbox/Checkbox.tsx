@@ -4,8 +4,7 @@ import {
 	CheckboxProps as ChakraCheckboxProps,
 } from "@chakra-ui/react";
 
-// Definimos los tipos de propiedades del componente
-interface CheckboxProps extends ChakraCheckboxProps {
+export interface CheckboxProps extends Omit<ChakraCheckboxProps, "onChange"> {
 	label: string;
 	isChecked: boolean;
 	onChange: (isChecked: boolean) => void;

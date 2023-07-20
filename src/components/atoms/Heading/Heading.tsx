@@ -1,12 +1,13 @@
-import React from 'react';
-import { Heading as ChakraHeading, HeadingProps as ChakraHeadingProps } from '@chakra-ui/react';
+import React from "react";
+import {
+	Heading as ChakraHeading,
+	HeadingProps as ChakraHeadingProps,
+} from "@chakra-ui/react";
 
-interface HeadingProps extends ChakraHeadingProps {
-
-}
+export interface HeadingProps extends ChakraHeadingProps {}
 
 const Heading: React.FC<HeadingProps> = ({ children, ...rest }) => {
-    return <ChakraHeading {...rest}>{children}</ChakraHeading>;
+	return <ChakraHeading {...rest}>{children}</ChakraHeading>;
 };
 
 export default Heading;

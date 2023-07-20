@@ -1,6 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react";
-import Button, { ButtonProps } from "./Button";
+import Button, { CustomButtonProps } from "./Button";
 
 export default {
 	title: "Atoms/Button",
@@ -16,9 +16,9 @@ export default {
 	},
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<CustomButtonProps> = (args) => <Button {...args} />;
 
-const TemplateVariants: Story<ButtonProps> = (args) => (
+const TemplateVariants: Story<CustomButtonProps> = (args) => (
 	<>
 		<Button colorScheme="primary" {...args} display="block" mb={3}>
 			Primary

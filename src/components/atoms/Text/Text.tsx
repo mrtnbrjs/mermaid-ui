@@ -4,7 +4,7 @@ import {
 	TextProps as ChakraTextProps,
 } from "@chakra-ui/react";
 
-interface TextProps extends ChakraTextProps {}
+export interface TextProps extends ChakraTextProps {}
 
 const Text: FC<TextProps> = ({ children, ...rest }) => {
 	return <ChakraText {...rest}>{children}</ChakraText>;

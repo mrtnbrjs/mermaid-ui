@@ -1,15 +1,13 @@
-// Importamos las librerías necesarias
 import React, { FC, ChangeEvent } from "react";
 import {
 	Radio as ChakraRadio,
 	RadioProps as ChakraRadioProps,
 } from "@chakra-ui/react";
 
-// Definimos los tipos de propiedades del componente
-interface RadioButtonProps extends ChakraRadioProps {
+export interface RadioButtonProps extends Omit<ChakraRadioProps, "onChange"> {
 	label: string;
 	isChecked: boolean;
-	onChange: (isChecked: boolean) => void;
+	onChange: (event: ChangeEvent<HTMLInputElement>) => void; // Ajustamos para recibir el evento
 }
 
 const Radio: FC<RadioButtonProps> = ({
@@ -19,7 +17,7 @@ const Radio: FC<RadioButtonProps> = ({
 	...rest
 }) => {
 	const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-		onChange(e.target.checked);
+		onChange(e); // Pasamos el evento completo
 	};
 
 	return (

@@ -5,6 +5,15 @@ import Button, { ButtonProps } from "./Button";
 export default {
 	title: "Atoms/Button",
 	component: Button,
+	tags: ["autodocs"],
+	parameters: {
+		docs: {
+			description: {
+				component:
+					"El componente 'Button' es un elemento interactivo crucial en la interfaz de usuario que se usa para acciones principales. Proporciona una llamada a la acción destacada y permite a los usuarios interactuar con la aplicación de manera intuitiva. Su diseño, accesibilidad y feedback visual adecuados mejoran la experiencia del usuario en general.",
+			},
+		},
+	},
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;

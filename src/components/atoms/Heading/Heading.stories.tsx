@@ -5,6 +5,15 @@ import Heading, { HeadingProps } from "./Heading";
 export default {
 	title: "Atoms/Heading",
 	component: Heading,
+	tags: ["autodocs"],
+	parameters: {
+		docs: {
+			description: {
+				component:
+					"Un 'Heading' es un componente esencial para resaltar títulos y encabezados en una página web. Se utiliza para establecer la jerarquía de contenido y mejorar la accesibilidad y el SEO. Este componente asegura una presentación consistente y legible, permitiendo una mejor experiencia de usuario en la aplicación web.",
+			},
+		},
+	},
 } as Meta;
 
 const Template: Story<HeadingProps> = (args) => <Heading {...args} />;
